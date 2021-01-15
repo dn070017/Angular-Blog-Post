@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend server for Angular Blog Post",
+  "main": "app.js",
+  "repository": "git@github.com:dn070017/Angular-Blog-Post.git",
+  "author": "Ping-Han Hsieh",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "get-json": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.11",
+    "readline-sync": "^1.4.10"
+  },
+  "scripts": {
+    "start": "node -r esm app.mjs"
+  }
+}

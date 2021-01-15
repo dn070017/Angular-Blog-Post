@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" fxLayoutAlign="space-between center" fxShow="true" fxHide.lt-md="true">
+    <div>
+        <span>RSG Norway Blog Post</span>
+    </div>
+    <div>
+        <!--<button mat-button *ngIf="!isLogin">
+            <mat-icon>login</mat-icon><span class="icon-text"> Login</span>
+        </button>-->
+        <!--<button mat-button *ngIf="isLogin" [routerLink]="'/dashboard/' + user.username">
+            <mat-icon>dashboard</mat-icon><span class="icon-text">總覽</span>
+        </button>
+        <button mat-button *ngIf="isLogin" [routerLink]="'/tasks/' + user.username">
+            <mat-icon>assignment_turned_in</mat-icon><span class="icon-text">任務管理</span>
+        </button>
+        <button mat-button *ngIf="isLogin" [routerLink]="'/cases/'">
+            <mat-icon>supervised_user_circle</mat-icon><span class="icon-text">病歷管理</span>
+        </button>
+        <button mat-button *ngIf="isLogin" routerLink="/receipt">
+            <mat-icon>receipt</mat-icon><span class="icon-text">收款單據</span>
+        </button>
+        <button mat-button *ngIf="isLogin" routerLink="/template">
+            <mat-icon>integration_instructions</mat-icon><span class="icon-text">變數集合</span>
+        </button>-->
+        <button mat-button *ngIf="isLogin" (click)="auth.logout()">
+            <mat-icon>login</mat-icon><span class="icon-text">Logout</span>
+        </button>
+    </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

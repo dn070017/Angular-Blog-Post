@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Login as Administrator</h1>
+<mat-dialog-content>
+    <div fxLayout="column" fxLayoutAlign="center center">
+        <form color="primary" [formGroup]="loginForm">
+            <mat-form-field>
+                <input matInput formControlName="username" placeholder="Username" required autofocus>
+            </mat-form-field><br>
+            <mat-form-field>
+                <input matInput formControlName="password" type="password" placeholder="Password" required>
+            </mat-form-field><br>
+            <mat-checkbox formControlName="remember">Remember me</mat-checkbox>
+        </form>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions fxLayoutAlign="center center">
+<button mat-flat-button color="primary" (click)="login()">Login</button>
+<!--<button mat-flat-button color="primary" (click)="forgetPassword()">忘記密碼</button>-->
+</mat-dialog-actions>
